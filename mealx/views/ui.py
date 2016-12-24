@@ -29,6 +29,10 @@ def unauthorized(error):
 def home():
     return render_template('home.html')
 
+@ui.route('/ingredients')
+def ingredients():
+    return render_template('ingredients.html')
+
 @ui.route('/meals')
 def meals():
     return render_template('meals.html')

@@ -14,8 +14,17 @@
         {% endblock %}
     </head>
     <body>
-        {% block page %}
-        {% endblock %}
+        <ul id='navi'>
+            <li><a class='{% block navi_ingredients %}{% endblock %}' href='{{ url_for(".ingredients") }}'>Ingredients</a></li>
+            <li><a class='{% block navi_meals %}{% endblock %}' href='{{ url_for(".meals") }}'>Meals</a></li>
+            <li class='float-right'><a class='{% block navi_logout %}{% endblock %}' href='{{ url_for(".logout") }}'>Logout</a></li>
+            <div class='clear-float'></div>
+        </ul>
+        <div id='page'>
+            {% block page %}
+                <h1>Welcome</h1>
+            {% endblock %}
+        </div>
     </body>
 </html>
 

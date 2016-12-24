@@ -1,3 +1,46 @@
 html, body {
     background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.clear-float {
+    clear: both;
+}
+
+#navi {
+    list-style-type: none;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#navi li {
+    float: left;
+}
+
+#navi li a {
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#navi li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#navi li a.active {
+    background-color: #4CAF50;
+}
+
+#page {
+    margin: 10px;
 }

@@ -1,4 +1,6 @@
 {% extends "layout.html" %}
+{% block navi_meals %}active{% endblock %}
 {% block page %}
+    <h1>Meals</h1>
     <a href='{{ url_for(".create_meal") }}'>Create Meal</a>
 {% endblock %}
